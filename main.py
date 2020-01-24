@@ -1,11 +1,9 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 from calculadora import JanelaCalculadora
-try:
-    aplicacao = QApplication(sys.argv)
 
-    calculadora = JanelaCalculadora()
+aplicacao = QApplication(sys.argv)
 
-    sys.exit(aplicacao.exec_())
-except:
-    sys.exit(aplicacao.exec_())
+calculadora = JanelaCalculadora()
+
+sys.exit(aplicacao.exec_())
